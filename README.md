@@ -35,6 +35,20 @@ This tool is inspired by a PowerShell script but built with Python and Tkinter f
 5. **Generate**: Click "Generate Assets".
 6. Monitor the logs in the text area for progress and details about the generated files.
 
+## Building Executable
+
+To create a standalone `.exe` file for Windows:
+
+1.  Install PyInstaller:
+    ```bash
+    pip install pyinstaller
+    ```
+2.  Build the executable:
+    ```bash
+    pyinstaller --noconsole --onefile --name "AndroidAssetsGenerator" main.py
+    ```
+3.  The output file `AndroidAssetsGenerator.exe` will be in the `dist` folder.
+
 ## Generated Structure
 ```
 Output Directory/
